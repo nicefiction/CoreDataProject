@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0942C1E726467113006E4B2E /* SelfAndForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0942C1E626467113006E4B2E /* SelfAndForEach.swift */; };
 		09D8D9AC26466D6200FCF89E /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8D9AB26466D6200FCF89E /* CoreDataProjectApp.swift */; };
 		09D8D9AE26466D6200FCF89E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8D9AD26466D6200FCF89E /* ContentView.swift */; };
 		09D8D9B026466D6300FCF89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D8D9AF26466D6300FCF89E /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0942C1E626467113006E4B2E /* SelfAndForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAndForEach.swift; sourceTree = "<group>"; };
 		09D8D9A826466D6200FCF89E /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D8D9AB26466D6200FCF89E /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		09D8D9AD26466D6200FCF89E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0942C1E5264670C4006E4B2E /* Day57 */ = {
+			isa = PBXGroup;
+			children = (
+				0942C1E626467113006E4B2E /* SelfAndForEach.swift */,
+			);
+			path = Day57;
+			sourceTree = "<group>";
+		};
 		09D8D99F26466D6100FCF89E = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		09D8D9AA26466D6200FCF89E /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				0942C1E5264670C4006E4B2E /* Day57 */,
 				09D8D9AB26466D6200FCF89E /* CoreDataProjectApp.swift */,
 				09D8D9AD26466D6200FCF89E /* ContentView.swift */,
 				09D8D9AF26466D6300FCF89E /* Assets.xcassets */,
@@ -147,6 +158,7 @@
 				09D8D9B526466D6300FCF89E /* Persistence.swift in Sources */,
 				09D8D9AE26466D6200FCF89E /* ContentView.swift in Sources */,
 				09D8D9B826466D6300FCF89E /* CoreDataProject.xcdatamodeld in Sources */,
+				0942C1E726467113006E4B2E /* SelfAndForEach.swift in Sources */,
 				09D8D9AC26466D6200FCF89E /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

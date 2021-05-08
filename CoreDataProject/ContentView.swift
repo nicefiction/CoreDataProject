@@ -1,14 +1,25 @@
-//
-//  ContentView.swift
-//  CoreDataProject
-//
-//  Created by Olivier Van hamme on 08/05/2021.
-//
+// MARK: ContentView.swift
 
 import SwiftUI
 import CoreData
 
+
+private let itemFormatter: DateFormatter = {
+   let formatter = DateFormatter()
+   formatter.dateStyle = .short
+   formatter.timeStyle = .medium
+   return formatter
+}()
+
+
+
+
+
 struct ContentView: View {
+    
+     // ////////////////////////
+    //  MARK: PROPERTY WRAPPERS
+    
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -16,7 +27,13 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
+    
+    
+     // //////////////////////////
+    //  MARK: COMPUTED PROPERTIES
+    
     var body: some View {
+        
         List {
             ForEach(items) { item in
                 Text("Item at \(item.timestamp!, formatter: itemFormatter)")
@@ -33,8 +50,14 @@ struct ContentView: View {
             }
         }
     }
+    
+    
+    
+     // //////////////
+    //  MARK: METHODS
 
     private func addItem() {
+        
         withAnimation {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
@@ -50,7 +73,9 @@ struct ContentView: View {
         }
     }
 
+    
     private func deleteItems(offsets: IndexSet) {
+        
         withAnimation {
             offsets.map { items[$0] }.forEach(viewContext.delete)
 
@@ -66,15 +91,17 @@ struct ContentView: View {
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
+
+
+
+
+ // ///////////////
+//  MARK: PREVIEWS
 
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
+        
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
