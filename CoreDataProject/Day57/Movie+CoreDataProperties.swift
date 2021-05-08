@@ -14,12 +14,10 @@ extension Movie {
         return NSFetchRequest<Movie>(entityName: "Movie")
     }
 
-    /*
      // @NSManaged public var title: String?
      @NSManaged public var title: String
      // @NSManaged public var director: String?
      @NSManaged public var director: String
-     */
     /**
      That will absolutely work .
      You can make Movie objects with just the same code as before ,
@@ -44,10 +42,6 @@ extension Movie {
      (...) Instead , you might want to consider adding computed properties
      that help us access the optional values safely ,
      while also letting us store your nil coalescing code all in one place .
-     */
-    @NSManaged public var title: String?
-    @NSManaged public var director: String?
-    /**
      For example , adding this as a property on Movie
      ensures that we always have a valid title string to work with :
      */
