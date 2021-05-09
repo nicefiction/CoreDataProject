@@ -17,7 +17,6 @@
 		09D8D9B326466D6300FCF89E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D8D9B226466D6300FCF89E /* Preview Assets.xcassets */; };
 		09D8D9B526466D6300FCF89E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8D9B426466D6300FCF89E /* Persistence.swift */; };
 		09D8D9B826466D6300FCF89E /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09D8D9B626466D6300FCF89E /* CoreDataProject.xcdatamodeld */; };
-		09F81A912647BB7900BB1733 /* FilteringAFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F81A902647BB7900BB1733 /* FilteringAFetchRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		09D8D9B426466D6300FCF89E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		09D8D9B726466D6300FCF89E /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		09D8D9B926466D6300FCF89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09F81A902647BB7900BB1733 /* FilteringAFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringAFetchRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				0942C1E5264670C4006E4B2E /* Day57 */,
-				09F81A8F2647BB2800BB1733 /* Day58 */,
 				09D8D9AB26466D6200FCF89E /* CoreDataProjectApp.swift */,
 				09D8D9AD26466D6200FCF89E /* ContentView.swift */,
 				09D8D9AF26466D6300FCF89E /* Assets.xcassets */,
@@ -96,14 +93,6 @@
 				09D8D9B226466D6300FCF89E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		09F81A8F2647BB2800BB1733 /* Day58 */ = {
-			isa = PBXGroup;
-			children = (
-				09F81A902647BB7900BB1733 /* FilteringAFetchRequest.swift */,
-			);
-			path = Day58;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +172,6 @@
 				0942C1ED26467AD4006E4B2E /* Movie+CoreDataProperties.swift in Sources */,
 				0942C1F126467DAD006E4B2E /* ConditionalSaving.swift in Sources */,
 				09D8D9AC26466D6200FCF89E /* CoreDataProjectApp.swift in Sources */,
-				09F81A912647BB7900BB1733 /* FilteringAFetchRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

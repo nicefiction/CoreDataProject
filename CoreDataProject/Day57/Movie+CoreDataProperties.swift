@@ -10,14 +10,18 @@ import CoreData
 
 extension Movie {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Movie> {
+    @nonobjc public class func fetchRequest()
+    -> NSFetchRequest<Movie> {
+        
         return NSFetchRequest<Movie>(entityName: "Movie")
     }
 
+    /*
      // @NSManaged public var title: String?
      @NSManaged public var title: String
      // @NSManaged public var director: String?
      @NSManaged public var director: String
+     */
     /**
      That will absolutely work .
      You can make Movie objects with just the same code as before ,
@@ -28,7 +32,7 @@ extension Movie {
      However ,
      you might notice something strange :
      even though our properties aren’t optional any more ,
-     it’s still possible to create an instance of the Movie class
+     it is still possible to create an instance of the Movie class
      without providing those values .
      This ought to be impossible :
      these properties aren’t optional ,
@@ -36,8 +40,9 @@ extension Movie {
      and yet we can create them without values . (...)
      */
     
+    @NSManaged public var title: String?
+    @NSManaged public var director: String?
     @NSManaged public var year: Int16
-
     /**
      (...) Instead , you might want to consider adding computed properties
      that help us access the optional values safely ,
@@ -47,7 +52,13 @@ extension Movie {
      */
     public var wrappedTitle: String {
         
-        title ?? "Unknown Title"
+        return title ?? "N/A"
+    }
+    
+    
+    public var wrappedDirector: String {
+        
+        return director ?? "N/A"
     }
     /**
      This way
@@ -61,6 +72,4 @@ extension Movie {
 
 
 
-extension Movie : Identifiable {
-
-}
+extension Movie : Identifiable {}
